@@ -100,6 +100,51 @@ const BannerStyleWrapper = styled.section`
       }
     }
   }
+  .bithu_menu_btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 284px;
+    button {
+      color: #FFFFF;
+      text-transform: uppercase;
+      font-family: "Bakbak One";
+      font-weight: 400;
+      font-size: 24px;
+      mar
+    }
+
+    .menu_btn {
+      display: none;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      svg {
+        font-size: 40px;
+      }
+    }
+
+    .join_btn {
+      height: 50px;
+      width: 114px;
+      background-color: transparent;
+    }
+
+    .connect_btn {
+      height: 78px;
+      min-width: 213px;
+      border: none;
+      margin-left: 558px;
+      background: #000000;
+
+      svg {
+        font-size: 20px;
+      }
+      
+    }
+  }
+
 
   @media only screen and (max-width: 991px) {
     padding-bottom: 80px;

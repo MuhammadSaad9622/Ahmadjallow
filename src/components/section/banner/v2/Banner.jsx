@@ -1,3 +1,5 @@
+import React from "react";
+import { Link } from "react-router-dom"; // Import Link from React Router
 import { useModal } from "../../../../utils/ModalContext";
 import CountdDown from "../../../../common/countDown";
 import Counter from "../../../../common/counter";
@@ -15,27 +17,22 @@ const Banner = () => {
     <BannerStyleWrapper className="bithu_v2_baner_sect" id="home">
       <div className="container">
         <div className="bithu_v2_baner_content">
-          <h2>
-            <span className="banner-emot"></span>Public Sale <span>Live !</span>
-          </h2>
           <h3>
-            <span className="count">
-              <Counter end={50000} duration={50000} />
-            </span>{" "}
-            / 50000 Minted
-          </h3>
-          <div className="bithu_v2_timer">
-            <h4>TIME LEFT</h4>
-            <div className="timer">
-              <CountdDown date={Date.now() + 1675076996} />
+          <div className="bithu_menu_btns">
+            {/* Wrap the button text with Link component */}
+            <Link to="./mint-1">
+              <Button
+                sm
+                variant="hovered"
+                className="connect_btn"
+              >
+                Sign_here
+              </Button>
+            </Link>
             </div>
-          </div>
-          {/* <div className="bithu_v2_baner_buttons text-center">
-            <Button lg variant="mint" onClick={() => mintModalHandle()}>
-              Mint Now
-            </Button>
-          </div> */}
-          <Particle className="v2_baner_stars" particles={data} />
+          </h3>
+          {/* Rest of your component code */}
+          {/* <Particle className="v2_baner_stars" particles={data} /> */}
         </div>
       </div>
     </BannerStyleWrapper>

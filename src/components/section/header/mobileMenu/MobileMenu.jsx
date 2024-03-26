@@ -3,7 +3,7 @@ import { useModal } from "../../../../utils/ModalContext";
 import { FaDiscord, FaTwitter, FaWallet } from "react-icons/fa";
 import { BsXLg } from "react-icons/bs";
 import Button from "../../../../common/button";
-import logo from "../../../../assets/images/logo.png";
+import logo from "../../../../assets/images/329D3B5A-F778-44C3-97A5-83DCD757B9DA.jpeg";
 import openseaIcon from "../../../../assets/images/icon/opensea.svg";
 
 import MobileMenuStyleWrapper from "./MobileMenu.style";
@@ -36,11 +36,9 @@ const MobileMenu = ({ mobileMenuhandle }) => {
             <li>
               <a href="#about">About</a>
             </li>
+          
             <li>
-              <a href="#Contact">Contact</a>
-            </li>
-            <li>
-              <a href="#team">Team</a>
+              <a href="./mint-1">Sign_here</a>
             </li>
             <li>
               <a href="#faq">FAQ</a>
@@ -51,12 +49,12 @@ const MobileMenu = ({ mobileMenuhandle }) => {
           <a href="# ">
             <img src={openseaIcon} alt="bithu social icon" />
           </a>
-          <a href="# ">
+          {/* <a href="# ">
             <FaTwitter />
-          </a>
-          <a href="# ">
+          </a> */}
+          {/* <a href="# ">
             <FaDiscord />
-          </a>
+          </a> */}
         </div>
         <Button
           sm

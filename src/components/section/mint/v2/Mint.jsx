@@ -53,7 +53,7 @@ const Mint = () => {
                       </SliderItem>
                     ))}
                   </Slider> */}
-                  <iframe  src="https://embed.ipfscdn.io/ipfs/bafybeicd3qfzelz4su7ng6n523virdsgobrc5pcbarhwqv3dj3drh645pi/?contract=0x82c26BB227D70B2D4d8F6Cad0C64f0E91c50F080&chain=%7B%22name%22%3A%22Sepolia%22%2C%22chain%22%3A%22ETH%22%2C%22rpc%22%3A%5B%22https%3A%2F%2F11155111.rpc.thirdweb.com%2F%24%7BTHIRDWEB_API_KEY%7D%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22Sepolia+Ether%22%2C%22symbol%22%3A%22ETH%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22sep%22%2C%22chainId%22%3A11155111%2C%22testnet%22%3Atrue%2C%22slug%22%3A%22sepolia%22%2C%22icon%22%3A%7B%22url%22%3A%22ipfs%3A%2F%2FQmcxZHpyJa8T4i63xqjPYrZ6tKrt55tZJpbXcjSDKuKaf9%2Fethereum%2F512.png%22%2C%22width%22%3A512%2C%22height%22%3A512%2C%22format%22%3A%22png%22%7D%7D&clientId=dd8d935a7ea3a876d645c59e2de86798&theme=dark&primaryColor=purple" width="900px" height="900px" style={{maxWidth: '100%'}} frameBorder={0} />
+                  <iframe  src="https://embed.ipfscdn.io/ipfs/bafybeicd3qfzelz4su7ng6n523virdsgobrc5pcbarhwqv3dj3drh645pi/?contract=0x589b915D7877Cb71130155a66f838764120F5D53&chain=%7B%22name%22%3A%22Polygon+Mainnet%22%2C%22chain%22%3A%22Polygon%22%2C%22rpc%22%3A%5B%22https%3A%2F%2F137.rpc.thirdweb.com%2F%24%7BTHIRDWEB_API_KEY%7D%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22MATIC%22%2C%22symbol%22%3A%22MATIC%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22matic%22%2C%22chainId%22%3A137%2C%22testnet%22%3Afalse%2C%22slug%22%3A%22polygon%22%2C%22icon%22%3A%7B%22url%22%3A%22ipfs%3A%2F%2FQmcxZHpyJa8T4i63xqjPYrZ6tKrt55tZJpbXcjSDKuKaf9%2Fpolygon%2F512.png%22%2C%22width%22%3A512%2C%22height%22%3A512%2C%22format%22%3A%22png%22%7D%7D&clientId=dd8d935a7ea3a876d645c59e2de86798&theme=dark&primaryColor=green" width="900px" height="900px" style={{maxWidth: '100%'}} frameBorder={0} />
                 </div>
                 {/* <ul className="mint_count_list">
                   <li>
@@ -129,25 +129,30 @@ const Mint = () => {
                 <h1>PUBLIC MINT LIVE</h1>
               </div>
 
-              <div className="mint_timer">
+              {/* <div className="mint_timer">
                 <h5>Public Mint End in</h5>
                 <CountdDown date={Date.now() + 1675076996} />
-              </div>
+              </div> */}
               <div className="content_footer">
                 {/* <h5>Max 5 NFTs per wallet</h5> */}
-                <h5>Price 0.15 ETH + gas</h5>
-                <h5>Mint is live until 25 apr 04:00H</h5>
+                <h5>Price 15 matic + gas</h5>
+                {/* <h5>Mint is live until 25 apr 04:00H</h5> */}
               </div>
               <div className="mint_btns">
-                <Button lg variant="outline">
-                  <img src={discordIcon} alt="icon" />
-                  join discord
-                </Button>
-                <Button lg variant="outline">
-                  <img src={twitterIcon} alt="icon" />
-                  join twitter
-                </Button>
-              </div>
+  <a href="https://discord.gg/4hWVdgdf">
+    <Button lg variant="outline">
+      <img src={discordIcon} alt="icon" />
+      join discord
+    </Button>
+  </a>
+  <a href="https://twitter.com/ByeGaryNFT?t=8v1TEKRZriGIVltbeP-XIw&s=09&fbclid=IwAR0Yq3C_iPYROMTIXpBSAoKg7G72sxMaPV0hsGabfUgZ3A4xcIIGpe-DwjM">
+    <Button lg variant="outline">
+      <img src={twitterIcon} alt="icon" />
+      join twitter
+    </Button>
+  </a>
+</div>
+
             </div>
           </div>
         </div>

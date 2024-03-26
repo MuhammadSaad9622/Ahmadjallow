@@ -64,12 +64,10 @@ const Header = () => {
       <li>
                     <a href="#about">About</a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href="./mint-1">Sign_here</a>
-                  </li>
-                  <li>
-                    <a href="#Contact">Contact</a>
-                  </li>
+                  </li> */}
+                 
                   {/* <li>
                     <a href="#team">Team</a>
                   </li> */}
